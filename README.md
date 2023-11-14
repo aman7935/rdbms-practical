@@ -185,14 +185,42 @@ these operators is used when want to multipy the values in columns with specific
    - CAST or CONVERT: Convert data types.
    - TO_DATE or TO_NUMBER : Convert strings to date or number types.
      
-### Using SQL Joins
+### Using Joins
 Join clause use combine rows from two or more table, based on a related column between them
 
-1. Inner join
+1. Inner join(Inner joins combine records from two tables whenever there are matching values in a field common to both tables)
 
  ![image](https://github.com/aman7935/rdbms-practical/assets/146933698/59328fe0-0838-4582-af2e-adf7d1f8ccf5)
 
+![Screenshot 2023-11-14 171207](https://github.com/aman7935/rdbms-practical/assets/146933698/29820f40-936f-4ecf-a1ba-42a62b70908f)
 
+Output :-
+
+![Screenshot 2023-11-14 171332](https://github.com/aman7935/rdbms-practical/assets/146933698/8343b279-9dfc-4248-bc03-fb445fa53a5d)
+
+2. left join(LEFT JOIN , also called LEFT OUTER JOIN , returns all records from the left (first) table and the matched records from the right (second) table.)
+
+![Screenshot 2023-11-14 171626](https://github.com/aman7935/rdbms-practical/assets/146933698/0cb9bb5d-9535-47b6-afe6-85cce2f8163f)
+
+output :-
+
+![Screenshot 2023-11-14 171814](https://github.com/aman7935/rdbms-practical/assets/146933698/7fcc457f-89a0-426a-a306-ccb99ddc2845)
+
+3. Right join(The RIGHT JOIN command returns all rows from the right table, and the matching records from the left table. The result is NULL from the left side, when there is no match.)
+
+![Screenshot 2023-11-14 172010](https://github.com/aman7935/rdbms-practical/assets/146933698/3d110ea5-5beb-4b17-a0d8-d971a427b283)
+
+output :-
+
+![image](https://github.com/aman7935/rdbms-practical/assets/146933698/a953a223-d84d-4494-a942-f834412f6966)
+
+4. full join(FULL JOIN creates the result-set by combining results of both LEFT JOIN and RIGHT JOIN)
+
+![Screenshot 2023-11-14 172422](https://github.com/aman7935/rdbms-practical/assets/146933698/82e443e8-2150-4a75-a91a-b5d0c5cd0f95)
+
+Output :-
+
+![image](https://github.com/aman7935/rdbms-practical/assets/146933698/aa483ddd-7399-4c6e-a6ea-faa0f4fa1e61)
 
 #5. Creating different types of Views for tailored presentation of data
 1. **Simple View:**
