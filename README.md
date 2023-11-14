@@ -76,14 +76,27 @@ Language (DCL)
 
 ### Table-Level Constraints
 
-Table-level constraints are applied to a specific table.
+### 1. primary key
+A primary key is a column or set of columns in a relational database table that uniquely identifies each row in the table. 
 
-| Constraint       | Description                                                   | Example                                                 |
-|-------------------|---------------------------------------------------------------|---------------------------------------------------------|
-| PRIMARY KEY       | Uniquely identifies each record in a table.                   | `CREATE TABLE users (id INT PRIMARY KEY, username VARCHAR(50) NOT NULL);` |
-| UNIQUE            | Ensures that values in a column are unique.                   | `CREATE TABLE employees (employee_id INT UNIQUE, name VARCHAR(50) NOT NULL);` |
-| CHECK             | Verifies that values in a column meet a specific condition.   | `CREATE TABLE products (product_id INT, quantity INT CHECK (quantity >= 0));` |
-| FOREIGN KEY       | Establishes a link between two tables.                        | `CREATE TABLE orders (order_id INT PRIMARY KEY, product_id INT, FOREIGN KEY (product_id) REFERENCES products(product_id));` |
+example :-
+
+creating table with primary key
+
+![Screenshot 2023-11-14 135251](https://github.com/aman7935/rdbms-practical/assets/146933698/835cc553-2f68-4753-9c70-538e46bc7c04)
+
+inserting values in table :-
+
+![Screenshot 2023-11-14 141017](https://github.com/aman7935/rdbms-practical/assets/146933698/1b95e0eb-1bf3-4cd6-b40b-10772dd9ad30)
+
+OUtput :-
+
+![Screenshot 2023-11-14 141213](https://github.com/aman7935/rdbms-practical/assets/146933698/43d9b9bb-20a7-4018-bf60-6f55799e1f3f)
+
+### 2. foreign key
+
+
+
 
 ### Column-Level Constraints
 
