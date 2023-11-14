@@ -224,28 +224,26 @@ Output :-
 
 #5. Creating different types of Views for tailored presentation of data
 1. **Simple View:**
-   - Based on a single table.
-   - Represents a subset of data or specific columns.
-   - Useful for simplifying complex queries.
+
+   ![image](https://github.com/aman7935/rdbms-practical/assets/146933698/0b583aca-4609-475a-95d2-0c68203a34ff)
+
 
 2. **Complex View:**
-   - Involves multiple tables.
-   - Often created through joins.
-   - Provides a consolidated and more comprehensive data set.
+
+  ![image](https://github.com/aman7935/rdbms-practical/assets/146933698/4af23099-6481-47a4-9604-76443db7861c)
+
 
 3. **Materialized View:**
-   - Physically stores the result set.
-   - Refreshed periodically.
-   - Offers improved query performance, especially for complex queries.
+
+  ![image](https://github.com/aman7935/rdbms-practical/assets/146933698/fe74d131-a93d-4aa5-9e86-08da84fcf369)
 
 4. **Indexed View:**
-   - Similar to a materialized view but includes an index.
-   - Enhances query performance for certain types of queries.
-   - Requires careful maintenance due to index overhead.
 
-5. **Updatable View:**
-   - Allows modification of the underlying data through the view.
-   - Must meet specific criteria, such as no joins or aggregations.
+  ![image](https://github.com/aman7935/rdbms-practical/assets/146933698/bc51dc3b-af87-45ea-84c5-83d675ac3a60)
+
+when we create a view, the view does not store any data by default. So, when we query a view, it actually queries the underlying base table and gets the data. But we can change this default behavior in SQL Server i.e. the SQL Server Views can store the data physically.
+
+
 
 
 
