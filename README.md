@@ -95,6 +95,25 @@ OUtput :-
 
 ### 2. foreign key
 
+creating table with primary key
+
+![Screenshot 2023-11-14 135251](https://github.com/aman7935/rdbms-practical/assets/146933698/835cc553-2f68-4753-9c70-538e46bc7c04)
+
+foreign key referencing from first table :-
+
+![Screenshot 2023-11-14 144039](https://github.com/aman7935/rdbms-practical/assets/146933698/6947d049-57bf-49c3-9898-6b7970b5e4bb)
+
+Inserting in 2nd table with the name of courses :-
+
+![Screenshot 2023-11-14 144309](https://github.com/aman7935/rdbms-practical/assets/146933698/e21f750f-5d74-4a4a-abe5-4093af2e57d7)
+
+OUtput after the execution :-
+
+![Screenshot 2023-11-14 144446](https://github.com/aman7935/rdbms-practical/assets/146933698/c21ca842-03fe-4939-975f-e37755b2bda7)
+
+###
+
+
 
 
 
