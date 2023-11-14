@@ -111,103 +111,88 @@ OUtput after the execution :-
 
 ![Screenshot 2023-11-14 144446](https://github.com/aman7935/rdbms-practical/assets/146933698/c21ca842-03fe-4939-975f-e37755b2bda7)
 
-###
+### 3. unique key
+
+creating a table with unique key :-
+
+![Screenshot 2023-11-14 150111](https://github.com/aman7935/rdbms-practical/assets/146933698/1bfbe7bd-6fa8-4083-96ad-4ea33f36ccb7)
+
+Output :-
+
+![Screenshot 2023-11-14 150213](https://github.com/aman7935/rdbms-practical/assets/146933698/42dd83d5-8f1e-4b37-8228-97786278d144)
+
+### check constraints on table level :-
+creating table with check constraints :-
+
+![Screenshot 2023-11-14 150703](https://github.com/aman7935/rdbms-practical/assets/146933698/115ba7cc-dc37-46df-afde-de176da9d9c4)
+
+if we enter the age less than 18 it will show error
+
+![Screenshot 2023-11-14 151150](https://github.com/aman7935/rdbms-practical/assets/146933698/2bd805dc-efc4-4fc9-a4f3-98177696aed5)
 
 
+## Column-Level Constraints
+### 1. NOT NULL constraints :-
+
+![Screenshot 2023-11-14 151715](https://github.com/aman7935/rdbms-practical/assets/146933698/2ea7f20e-e244-43f7-ac25-5c619bdbbcae)
+
+A NOT NULL constraint in SQL is a rule that prevents NULL values from being entered into a column within a table. This means that you should provide a valid SQL NOT NULL value to that column in the INSERT or UPDATE statements, as the column will always contain data.
+
+### 2. DEFAULT constraints :-
+
+![Screenshot 2023-11-14 154224](https://github.com/aman7935/rdbms-practical/assets/146933698/bdd25f17-ba86-445c-8f39-cbec953868b3)
+
+it helps to print the values which we declare with DEFAULT keywords.
+
+![Screenshot 2023-11-14 154347](https://github.com/aman7935/rdbms-practical/assets/146933698/73ef0243-1eab-46d5-a122-53dd5af2f5bb)
 
 
-
-### Column-Level Constraints
-
-Column-level constraints are applied to a specific column within a table.
-
-| Constraint       | Description                                                   | Example                                                 |
-|-------------------|---------------------------------------------------------------|---------------------------------------------------------|
-| NOT NULL          | Ensures that a column cannot have NULL values.                | `CREATE TABLE customers (customer_id INT NOT NULL, name VARCHAR(50));` |
-| DEFAULT           | Specifies a default value for a column.                       | `CREATE TABLE messages (message_id INT, content VARCHAR(255) DEFAULT 'No content');` |
-
-### Database-Level Constraints
-
-Database-level constraints involve multiple tables or the entire database.
-
-| Constraint       | Description                                                   | Example                                                 |
-|-------------------|---------------------------------------------------------------|---------------------------------------------------------|
-| UNIQUE INDEX      | Ensures that values in a column or a combination of columns are unique across tables. | `CREATE UNIQUE INDEX idx_unique_username ON users(username);` |
-| CHECK (Database)  | Enforces rules at the database level.                         | `CREATE DATABASE my_database WITH CHECK (compatibility_level >= 130);` |
 # 4. View data in the required form using Operators, Functions and Joins.
-### Using SQL Operators
+## Using SQL Operators
 
 Operators are used for operations like arithmetic, comparison, and logical operations.
 
-'''sql
--- Retrieve users with age greater than 25
+### 1.Filtering data with WHERE clause
 
-SELECT * FROM users WHERE age > 25;
+![Screenshot 2023-11-14 155052](https://github.com/aman7935/rdbms-practical/assets/146933698/e5ae2acf-f056-428f-8567-f57512413bb1)
 
--- Combine data from two columns
+it will show the values in which the salary in employees table is greater than 50000.
 
-SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM employees;
-### Using SQL Functions
+### 2.Logical operator
 
-Functions perform computations on data or manipulate data values.
+![Screenshot 2023-11-14 155609](https://github.com/aman7935/rdbms-practical/assets/146933698/5caa16b4-44b4-49fa-b91d-d87b2484f822)
 
-sql
--- Calculate the average salary
+it will print only values in which the salary is greater than 50000 or with the city name ludhiana.
 
-SELECT AVG(salary) AS average_salary FROM employees;
+### 3.Mathematical operator(perform mathematical operator on numeric columns)
 
--- Extract the year from a date
+![Screenshot 2023-11-14 155952](https://github.com/aman7935/rdbms-practical/assets/146933698/60a1a866-ced9-4148-aa57-b7f3fedeb15d)
 
-SELECT EXTRACT(YEAR FROM hire_date) AS hire_year FROM employees;
+these operators is used when want to multipy the values in columns with specific value. These only can perform numeric functons.
+
+## using functions 
+1*String Functions:*
+   - CONCAT : Concatenate two or more strings.
+   - UPPER and LOWER : Convert a string to uppercase or lowercase.
+   - SUBSTRING or SUBSTR : Extract a substring from a string.
+   - LENGTH or LEN : Get the length of a string.
+   - TRIM: Remove leading and trailing spaces.
+
+2. *Numeric Functions:*
+   - SUM, AVG, MIN, MAX : Aggregate functions for sum, average, minimum, and maximum values
+
+3. *Conversion Functions:*
+   - CAST or CONVERT: Convert data types.
+   - TO_DATE or TO_NUMBER : Convert strings to date or number types.
+     
 ### Using SQL Joins
+Join clause use combine rows from two or more table, based on a related column between them
 
-Joins combine rows from two or more tables based on a related column.
+1. Inner join
 
-sql
--- Inner Join: Retrieve orders with customer information
+ ![image](https://github.com/aman7935/rdbms-practical/assets/146933698/59328fe0-0838-4582-af2e-adf7d1f8ccf5)
 
-SELECT orders.order_id, customers.customer_name
-FROM orders
 
-INNER JOIN customers ON orders.customer_id = customers.customer_id;
-
--- Left Join: Retrieve all employees and their assigned projects
-
-SELECT employees.employee_id, 
-employees.employee_name, projects.project_name
-FROM employees
-LEFT JOIN employee_projects ON employees.employee_id = employee_projects.employee_id
-LEFT JOIN projects ON employee_projects.project_id = projects.project_id;
-# ### Using SQL Joins
-
-Joins combine rows from two or more tables based on a related column.
-
-sql
--- Inner Join: Retrieve orders with customer information
-SELECT orders.order_id, customers.customer_name
-FROM orders
-INNER JOIN customers ON orders.customer_id = customers.customer_id;
-
--- Left Join: Retrieve all employees and their assigned projects
-SELECT employees.employee_id, employees.employee_name, projects.project_name
-FROM employees
-LEFT JOIN employee_projects ON employees.employee_id = employee_projects.employee_id
-LEFT JOIN projects ON employee_projects.project_id = projects.project_id;
-### Using SQL Joins
-
-Joins combine rows from two or more tables based on a related column.
-
-sql
--- Inner Join: Retrieve orders with customer information
-SELECT orders.order_id, customers.customer_name
-FROM orders
-INNER JOIN customers ON orders.customer_id = customers.customer_id;
-
--- Left Join: Retrieve all employees and their assigned projects
-SELECT employees.employee_id, employees.employee_name, projects.project_name
-FROM employees
-LEFT JOIN employee_projects ON employees.employee_id = employee_projects.employee_id
-LEFT JOIN projects ON employee_projects.project_id = projects.project_id;
 
 #5. Creating different types of Views for tailored presentation of data
 1. **Simple View:**
