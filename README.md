@@ -291,7 +291,45 @@ OUTPUT :-
 
 ![Screenshot 2023-11-15 120810](https://github.com/aman7935/rdbms-practical/assets/146933698/f349f183-3688-42e1-86a3-36fb20c54368)
 
-outout :-
+output :-
 
 ![Screenshot 2023-11-15 120830](https://github.com/aman7935/rdbms-practical/assets/146933698/ee31b541-16b9-4fd3-ae87-7052834e1f2f)
+# 7. Error Handling using Internal Exceptions and External Exceptions
+
+## Internal exceptions/system defined exceptions(Defined by oracle)
+### 1. NO_DATA_FOUND EXCEPTION
+
+EXAMPLE :-
+
+first we have created and inserted data in table :-
+
+![Screenshot 2023-11-15 132759](https://github.com/aman7935/rdbms-practical/assets/146933698/680f70c6-082d-4837-9629-6b97348e50c7)
+
+now we will write exception handling code for no data :-
+
+![Screenshot 2023-11-15 132950](https://github.com/aman7935/rdbms-practical/assets/146933698/930eb9f5-0d4e-4c0c-870e-e803c2712a66)
+
+output :-
+
+![Screenshot 2023-11-15 133017](https://github.com/aman7935/rdbms-practical/assets/146933698/585bd139-f816-4894-9e9d-b11de5ef6aac)
+
+### 2. ZERO_DIVIDE exception
+
+creating and insertin values in table  :-
+
+![Screenshot 2023-11-15 133617](https://github.com/aman7935/rdbms-practical/assets/146933698/d93dad89-05d7-4b78-9362-e9b8f9329436)
+
+writing exception :-
+
+![Screenshot 2023-11-15 133709](https://github.com/aman7935/rdbms-practical/assets/146933698/6b06d7c4-3193-43eb-aa3e-c3557d10afe2)
+
+output :-
+
+![Screenshot 2023-11-15 133748](https://github.com/aman7935/rdbms-practical/assets/146933698/4c9e28c3-395f-4d55-9099-dc2be6410938)
+
+## 2. External exceptions( user defined exceptions)
+
+1. Raise exception
+ 
+
 
