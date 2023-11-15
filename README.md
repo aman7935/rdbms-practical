@@ -331,5 +331,19 @@ output :-
 
 1. Raise exception
  
+![Screenshot 2023-11-15 141128](https://github.com/aman7935/rdbms-practical/assets/146933698/a577d9ce-9156-4af2-a148-1d0d71d011b1)
 
+output :-
+
+![Screenshot 2023-11-15 141152](https://github.com/aman7935/rdbms-practical/assets/146933698/1d93b0bd-a515-4d41-8027-c498b219ff01)
+
+2. Raise_application_error
+
+![Screenshot 2023-11-15 142453](https://github.com/aman7935/rdbms-practical/assets/146933698/670f5ec1-1f65-41e4-9c0f-388940af8b86)
+
+output :-
+
+![Screenshot 2023-11-15 142531](https://github.com/aman7935/rdbms-practical/assets/146933698/08ffbcb4-9d68-4cc7-b597-602a38b58cb8)
+
+# 8. Using various types of Cursors
 
