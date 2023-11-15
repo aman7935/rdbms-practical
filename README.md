@@ -243,8 +243,55 @@ Output :-
 
 when we create a view, the view does not store any data by default. So, when we query a view, it actually queries the underlying base table and gets the data. But we can change this default behavior in SQL Server i.e. the SQL Server Views can store the data physically.
 
+# 6. How to apply Conditional Controls in PL/SQL
 
+## there are two types of condition control statements(IF statement and CASE statements)
+### IF statements can be further divided into 3 parts
+1. IF-THEN
 
+example :-
 
+![Screenshot 2023-11-15 114207](https://github.com/aman7935/rdbms-practical/assets/146933698/7b8aa56a-2f9b-4026-8a58-299419404a3f)
 
+OUTPUT :-
+
+![Screenshot 2023-11-15 114700](https://github.com/aman7935/rdbms-practical/assets/146933698/2fc4d91a-2809-436f-87d9-7d03243c1a7e)
+
+2. IF-THEN-ELSE
+
+example :-
+
+![Screenshot 2023-11-15 115222](https://github.com/aman7935/rdbms-practical/assets/146933698/dfa5b023-4388-4061-be40-d92ab7c5c791)
+
+OUTPUT :-
+
+![Screenshot 2023-11-15 115310](https://github.com/aman7935/rdbms-practical/assets/146933698/745105c8-8f34-4d68-8e46-571b0110596c)
+
+3. IF-THEN-ELSIF
+
+example :-
+
+![Screenshot 2023-11-15 115629](https://github.com/aman7935/rdbms-practical/assets/146933698/cbbbbb77-fdc1-48a2-8b90-b6f9f6797e38)
+
+OUTPUT :-
+
+![Screenshot 2023-11-15 115640](https://github.com/aman7935/rdbms-practical/assets/146933698/287a0f56-b17d-4357-bb2b-9260c803eecb)
+
+## 2. CASE STATEMENT
+
+EXAMPLE :-
+
+![Screenshot 2023-11-15 120336](https://github.com/aman7935/rdbms-practical/assets/146933698/fccc7235-93be-4479-bad9-9db1bcda3562)
+
+OUTPUT :-
+
+![Screenshot 2023-11-15 120401](https://github.com/aman7935/rdbms-practical/assets/146933698/49b1b281-9403-459a-8d40-920e6d6bd47b)
+
+## SEARCHED CASE STATEMENT
+
+![Screenshot 2023-11-15 120810](https://github.com/aman7935/rdbms-practical/assets/146933698/f349f183-3688-42e1-86a3-36fb20c54368)
+
+outout :-
+
+![Screenshot 2023-11-15 120830](https://github.com/aman7935/rdbms-practical/assets/146933698/ee31b541-16b9-4fd3-ae87-7052834e1f2f)
 
