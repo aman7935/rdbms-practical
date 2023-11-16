@@ -55,22 +55,22 @@ markdown
 Language (DCL)
 | Data Definition Language (DDL) | Description                                               | Example                                      |
 |-------------------------------|-----------------------------------------------------------|----------------------------------------------|
-| CREATE                        | Defines new database objects such as tables, indexes, etc. | `CREATE TABLE users (id INT PRIMARY KEY, username VARCHAR(50) NOT NULL, email VARCHAR(100) UNIQUE);` |
-| ALTER                         | Modifies the structure of an existing database object.    | `ALTER TABLE users ADD COLUMN birthdate DATE;` |
-| DROP                          | Deletes a database object (e.g., table, index).           | `DROP TABLE users;`                          |
+| CREATE                        | Defines new database objects such as tables, indexes, etc. | CREATE TABLE users (id INT PRIMARY KEY, username VARCHAR(50) NOT NULL, email VARCHAR(100) UNIQUE);` |
+| ALTER                         | Modifies the structure of an existing database object.    | `ALTER TABLE users ADD COLUMN birthdate DATE; |
+| DROP                          | Deletes a database object (e.g., table, index).           | `DROP TABLE users;                          |
 
 | Data Manipulation Language (DML) | Description                                   | Example                                        |
 |----------------------------------|-----------------------------------------------|------------------------------------------------|
-| SELECT                           | Retrieves data from one or more tables.      | `SELECT * FROM users WHERE age > 21;`           |
-| INSERT                           | Adds new records into a table.               | `INSERT INTO users (username, email) VALUES ('JohnDoe', 'john@example.com');` |
-| UPDATE                           | Modifies existing records in a table.        | `UPDATE users SET age = 25 WHERE username = 'JohnDoe';` |
-| DELETE                           | Removes records from a table.                | `DELETE FROM users WHERE username = 'JohnDoe';` |
+| SELECT                           | Retrieves data from one or more tables.      | SELECT * FROM users WHERE age > 21;`           |
+| INSERT                           | Adds new records into a table.               | `INSERT INTO users (username, email) VALUES ('JohnDoe', 'john@example.com'); |
+| UPDATE                           | Modifies existing records in a table.        | `UPDATE users SET age = 25 WHERE username = JohnDoe; |
+| DELETE                           | Removes records from a table.                | `DELETE FROM users WHERE username = JohnDoe'; |
 
 | Data Control Language (DCL) | Description                                | Example                                           |
 |-----------------------------|--------------------------------------------|---------------------------------------------------|
-| GRANT                       | Provides specific privileges to users.     | `GRANT SELECT, INSERT ON users TO employee_role;` |
-| REVOKE                      | Withdraws previously granted permissions. | `REVOKE INSERT ON users FROM employee_role;`      |
-| DENY                        | Explicitly denies certain permissions.      | `DENY DELETE ON users TO temporary_user;`         |
+| GRANT                       | Provides specific privileges to users.     | GRANT SELECT, INSERT ON users TO employee_role;` |
+| REVOKE                      | Withdraws previously granted permissions. | REVOKE INSERT ON users FROM employee_role;`      |
+| DENY                        | Explicitly denies certain permissions.      | DENY DELETE ON users TO temporary_user;`         |
 # 3. How to apply Constraints at various levels.
 ## Constraints in Database Design
 
@@ -427,4 +427,14 @@ Using the stored function
 ![Screenshot 2023-11-16 104111](https://github.com/aman7935/rdbms-practical/assets/146933698/b7386d40-73ce-4da9-ba4b-eb33cca20a20)
 
 # 10. Creating Packages and applying Triggers
+
+1. Create pacakge specification
+
+![Screenshot 2023-11-16 110230](https://github.com/aman7935/rdbms-practical/assets/146933698/5336a6ca-721d-4180-904a-1328ecfafe88)
+
+
+2. create Package body
+
+![Screenshot 2023-11-16 110252](https://github.com/aman7935/rdbms-practical/assets/146933698/a53f253d-31fe-47c1-b38c-4619c9a185d3)
+
 
