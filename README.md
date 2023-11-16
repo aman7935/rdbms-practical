@@ -438,3 +438,19 @@ Using the stored function
 ![Screenshot 2023-11-16 110252](https://github.com/aman7935/rdbms-practical/assets/146933698/a53f253d-31fe-47c1-b38c-4619c9a185d3)
 
 
+#  Applying Triggers
+## Row level trigger
+
+![image](https://github.com/aman7935/rdbms-practical/assets/146933698/d261b4a6-ef1f-4715-9310-53a66640e486)
+
+## column level trigger
+
+![Screenshot 2023-11-16 115101](https://github.com/aman7935/rdbms-practical/assets/146933698/c27f1bfe-c197-42ec-b0b1-a3e782c0b047)
+# 11. Creating Arrays and Nested Tables.
+creating arrays
+
+![Screenshot 2023-11-16 120412](https://github.com/aman7935/rdbms-practical/assets/146933698/0b03b041-bc48-48d2-883c-86ab588163de)
+
+## Nested table
+![Screenshot 2023-11-16 121359](https://github.com/aman7935/rdbms-practical/assets/146933698/7948d9e9-cd92-4a09-9552-9f92d82f9744)
+
