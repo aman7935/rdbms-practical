@@ -346,4 +346,85 @@ output :-
 ![Screenshot 2023-11-15 142531](https://github.com/aman7935/rdbms-practical/assets/146933698/08ffbcb4-9d68-4cc7-b597-602a38b58cb8)
 
 # 8. Using various types of Cursors
+## A cursor is a pointer to this context area. PL/SQL controls the context area through a cursor. A cursor holds the rows (one or more) returned by a SQL statement. The set of rows the cursor holds is referred to as the active set.
+
+two types of cursors
+1. Impicit cursors
+2. explicit cursors
+
+### implicit Attribute & Description
+1	
+%FOUND
+
+Returns TRUE if an INSERT, UPDATE, or DELETE statement affected one or more rows or a SELECT INTO statement returned one or more rows. Otherwise, it returns FALSE.
+
+2	
+%NOTFOUND
+
+The logical opposite of %FOUND. It returns TRUE if an INSERT, UPDATE, or DELETE statement affected no rows, or a SELECT INTO statement returned no rows. Otherwise, it returns FALSE.
+
+3	
+%ISOPEN
+
+Always returns FALSE for implicit cursors, because Oracle closes the SQL cursor automatically after executing its associated SQL statement.
+
+4	
+%ROWCOUNT
+
+Returns the number of rows affected by an INSERT, UPDATE, or DELETE statement, or returned by a SELECT INTO statement.
+
+### SQL%ROWCOUNT attribute to determine the number of rows affected −
+
+![Screenshot 2023-11-16 100114](https://github.com/aman7935/rdbms-practical/assets/146933698/89c362bd-2a4b-4fe6-9789-6a5adb080343)
+
+OUTPUT:-
+
+![Screenshot 2023-11-16 100302](https://github.com/aman7935/rdbms-practical/assets/146933698/a348cad7-fd0b-442b-9768-e6a96d1958bd)
+
+### Explicit Cursors
+
+Explicit cursors are programmer-defined cursors for gaining more control over the context area. An explicit cursor should be defined in the declaration section of the PL/SQL Block. It is created on a SELECT Statement which returns more than one row.
+
+Declaring the Cursor
+
+![Screenshot 2023-11-16 100544](https://github.com/aman7935/rdbms-practical/assets/146933698/03dee94e-2701-44a1-8327-4aef56a30c6c)
+
+Opening the Cursor
+
+![Screenshot 2023-11-16 100615](https://github.com/aman7935/rdbms-practical/assets/146933698/c5878905-55bd-45dc-beee-476076b76d0a)
+
+Fetching the Cursor
+
+![Screenshot 2023-11-16 100641](https://github.com/aman7935/rdbms-practical/assets/146933698/f25a1c39-7c26-4f64-a80d-3d3df74afd62)
+
+
+Closing the Cursor
+
+![Screenshot 2023-11-16 100740](https://github.com/aman7935/rdbms-practical/assets/146933698/a90c5164-82b4-4b58-824c-229e955332b0)
+
+# 9. How to run Stored Procedures and Functions
+
+## 1. procedures 
+
+A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
+
+example :-
+
+![Screenshot 2023-11-16 102457](https://github.com/aman7935/rdbms-practical/assets/146933698/3452cae0-6511-4bb6-8174-8ff24325cfc9)
+
+executing a stored procedure
+
+![Screenshot 2023-11-16 102617](https://github.com/aman7935/rdbms-practical/assets/146933698/4bf1208f-d832-441c-b040-b42e86ad98ca)
+
+## 2. Stored functions 
+
+Creating the stored function
+
+![Screenshot 2023-11-16 104018](https://github.com/aman7935/rdbms-practical/assets/146933698/050acaf9-7895-48f7-92b1-80f529aa7232)
+
+Using the stored function
+
+![Screenshot 2023-11-16 104111](https://github.com/aman7935/rdbms-practical/assets/146933698/b7386d40-73ce-4da9-ba4b-eb33cca20a20)
+
+# 10. Creating Packages and applying Triggers
 
